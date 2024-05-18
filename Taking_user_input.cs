@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hello
 {
-    internal class Program
+    internal class Taking_user_input
     {
         static void Main(string[] args)
         {
