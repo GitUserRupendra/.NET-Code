@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace Hello
 {
-    internal class Taking_user_input
+internal class All_Basics
     {
+     static void Greet(string name)
+ {
+     Console.WriteLine("Good Morning " + name);
+     
+ }
+  static float Average(int a, int b, int c)
+ {
+     float sum = a + b + c;
+     return sum / 3;
+ }
         static void Main(string[] args)
         {
             Console.WriteLine("Enter Your Name :-");
@@ -16,6 +26,19 @@ namespace Hello
             Console.WriteLine("How many candies do you want?");
                 String can = Console.ReadLine();
             Console.WriteLine("You will get 4 more candies : " +( Convert.ToInt32(can) + 4));
+
+ // Run the  Greet Method:-
+ Greet("Rupendra");
+
+ // Run the Average Method:-
+ Console.WriteLine("The average of 3 number is  "+Average(2,3,6));
+
+ // OOPs - Classes and Objects
+ Player rn = new Player();
+ Console.WriteLine(rn.health);
+ rn.setHealth(90);
+ Console.WriteLine(rn.health);
+
 
             Console.ReadLine();
             
